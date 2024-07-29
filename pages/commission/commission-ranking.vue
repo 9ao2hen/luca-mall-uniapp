@@ -121,7 +121,7 @@
 		getBrokerageRankNumber();
 	});
 
-	// TODO 芋艿：此处可考虑抽离
+	// TODO mervyn：此处可考虑抽离
 	/**
 	 * 获得当前周的开始和结束时间
 	 */
@@ -154,7 +154,7 @@
 		return [startDate, endDate];
 	}
 
-	// TODO 芋艿：css 需要优化下；并且展示样式有问题
+	// TODO mervyn：css 需要优化下；并且展示样式有问题
 </script>
 <style lang="scss" scoped>
 	.CommissionRank .header {

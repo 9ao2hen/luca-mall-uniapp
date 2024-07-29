@@ -21,7 +21,7 @@
     <view class="flex align-center justify-between ss-p-25">
       <!-- 左侧图标 -->
       <view class="time-icon">
-        <!-- TODO 芋艿：图片统一维护 -->
+        <!-- TODO mervyn：图片统一维护 -->
         <image class="ss-w-100 ss-h-100" src="http://mall.juyogo.cn/static/images/priceTag.png" />
       </view>
       <scroll-view class="time-list" :scroll-into-view="activeTimeElId" scroll-x scroll-with-animation>

@@ -57,7 +57,7 @@
 
   const typeList = [
     {
-      // icon: '/static/img/shop/pay/wechat.png', // TODO 芋艿：后续给个 icon
+      // icon: '/static/img/shop/pay/wechat.png', // TODO mervyn：后续给个 icon
       title: '钱包余额',
       value: '1',
     },

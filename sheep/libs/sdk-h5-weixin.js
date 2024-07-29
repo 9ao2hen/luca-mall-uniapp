@@ -38,7 +38,7 @@ export default {
         timestamp: data.timestamp,
         nonceStr: data.nonceStr,
         signature: data.signature,
-        jsApiList: ['chooseWXPay'], // TODO 芋艿：后续可以设置更多权限；
+        jsApiList: ['chooseWXPay'], // TODO mervyn：后续可以设置更多权限；
         openTagList: data.openTagList
       });
     }
@@ -62,7 +62,7 @@ export default {
     }
   },
 
-  //在需要定位页面调用 TODO 芋艿：未测试
+  //在需要定位页面调用 TODO mervyn：未测试
   getLocation(callback) {
     this.isReady(() => {
       jweixin.getLocation({
@@ -77,7 +77,7 @@ export default {
     });
   },
 
-  //获取微信收货地址 TODO 芋艿：未测试
+  //获取微信收货地址 TODO mervyn：未测试
   openAddress(callback) {
     this.isReady(() => {
       jweixin.openAddress({
@@ -93,7 +93,7 @@ export default {
     });
   },
 
-  // 微信扫码 TODO 芋艿：未测试
+  // 微信扫码 TODO mervyn：未测试
   scanQRCode(callback) {
     this.isReady(() => {
       jweixin.scanQRCode({
@@ -109,7 +109,7 @@ export default {
     });
   },
 
-  // 更新微信分享信息 TODO 芋艿：未测试
+  // 更新微信分享信息 TODO mervyn：未测试
   updateShareInfo(data, callback = null) {
     this.isReady(() => {
       const shareData = {
@@ -133,7 +133,7 @@ export default {
     });
   },
 
-  // 打开坐标位置 TODO 芋艿：未测试
+  // 打开坐标位置 TODO mervyn：未测试
   openLocation(data, callback) {
     this.isReady(() => {
       jweixin.openLocation({
@@ -144,7 +144,7 @@ export default {
     });
   },
 
-  // 选择图片 TODO 芋艿：未测试
+  // 选择图片 TODO mervyn：未测试
   chooseImage(callback) {
     this.isReady(() => {
       jweixin.chooseImage({

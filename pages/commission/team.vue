@@ -1,4 +1,4 @@
-<!-- 页面 TODO 芋艿：该页面的实现代码需要优化，包括 js 和 css，以及相关的样式设计 -->
+<!-- 页面 TODO mervyn：该页面的实现代码需要优化，包括 js 和 css，以及相关的样式设计 -->
 <template>
   <s-layout title="我的团队" :class="state.scrollTop ? 'team-wrap' : ''" navbar="inner">
     <view class="promoter-list">
@@ -59,7 +59,7 @@
               v-if="sort === 'userCountDESC'"
             >
               团队排序
-              <!-- TODO 芋艿：看看怎么从项目里拿出去 -->
+              <!-- TODO mervyn：看看怎么从项目里拿出去 -->
               <image src="/static/images/sort1.png" />
             </view>
             <view

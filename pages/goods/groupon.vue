@@ -226,7 +226,7 @@
   }
 
   // 分享信息
-  // TODO @芋艿：分享的接入
+  // TODO @mervyn：分享的接入
   const shareInfo = computed(() => {
     if (isEmpty(state.activity)) return {};
     return sheep.$platform.share.getShareInfo(

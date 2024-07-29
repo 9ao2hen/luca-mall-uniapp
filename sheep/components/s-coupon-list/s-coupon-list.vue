@@ -60,7 +60,7 @@
       </view>
     </view>
 
-    <!-- TODO 芋艿：可优化，增加优惠劵的描述 -->
+    <!-- TODO mervyn：可优化，增加优惠劵的描述 -->
     <view class="desc ss-flex ss-row-between">
       <view>
         <view class="desc-title">{{ data.description }}</view>

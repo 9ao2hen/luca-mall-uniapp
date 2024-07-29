@@ -53,7 +53,7 @@
           />
         </button>
 
-        <!-- 7.3 iOS 登录 TODO 芋艿：等后面搞 App 再弄 -->
+        <!-- 7.3 iOS 登录 TODO mervyn：等后面搞 App 再弄 -->
         <button
           v-if="sheep.$platform.os === 'ios' && sheep.$platform.name === 'App'"
           @tap="thirdLogin('apple')"

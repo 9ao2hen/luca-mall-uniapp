@@ -46,7 +46,7 @@
             </text>
           </view>
         </view>
-        <!-- TODO 芋艿：接入积分 -->
+        <!-- TODO mervyn：接入积分 -->
         <view
           class="order-item ss-flex ss-col-center ss-row-between"
           v-if="state.orderPayload.order_type === 'score'"
@@ -96,7 +96,7 @@
         >
           <view class="item-title">活动优惠</view>
           <view class="ss-flex ss-col-center">
-            <!--                @tap="state.showDiscount = true" TODO 芋艿：后续要把优惠信息打进去 -->
+            <!--                @tap="state.showDiscount = true" TODO mervyn：后续要把优惠信息打进去 -->
             <text class="item-value text-red">
               -￥{{ fen2yuan(state.orderInfo.price.discountPrice) }}
             </text>
@@ -132,7 +132,7 @@
       @close="state.showCoupon = false"
     />
 
-    <!-- 满额折扣弹框 TODO 芋艿：后续要把优惠信息打进去 -->
+    <!-- 满额折扣弹框 TODO mervyn：后续要把优惠信息打进去 -->
     <s-discount-list
       v-model="state.orderInfo"
       :show="state.showDiscount"
@@ -217,8 +217,8 @@
       items: state.orderPayload.items,
       couponId: state.orderPayload.couponId,
       addressId: state.addressInfo.id,
-      deliveryType: 1, // TODO 芋艿：需要支持【门店自提】
-      pointStatus: false, // TODO 芋艿：需要支持【积分选择】
+      deliveryType: 1, // TODO mervyn：需要支持【门店自提】
+      pointStatus: false, // TODO mervyn：需要支持【积分选择】
       combinationActivityId: state.orderPayload.combinationActivityId,
       combinationHeadId: state.orderPayload.combinationHeadId,
       seckillActivityId: state.orderPayload.seckillActivityId
@@ -243,8 +243,8 @@
       items: state.orderPayload.items,
       couponId: state.orderPayload.couponId,
       addressId: state.addressInfo.id,
-      deliveryType: 1, // TODO 芋艿：需要支持【门店自提】
-      pointStatus: false, // TODO 芋艿：需要支持【积分选择】
+      deliveryType: 1, // TODO mervyn：需要支持【门店自提】
+      pointStatus: false, // TODO mervyn：需要支持【积分选择】
       combinationActivityId: state.orderPayload.combinationActivityId,
       combinationHeadId: state.orderPayload.combinationHeadId,
       seckillActivityId: state.orderPayload.seckillActivityId

@@ -158,7 +158,7 @@
           skuId: e.id,
           count: e.goods_num
         }],
-        // TODO 芋艿：后续清理掉这 2 参数
+        // TODO mervyn：后续清理掉这 2 参数
         deliveryType: 1,
         pointStatus: false,
       }),
@@ -184,7 +184,7 @@
     }, 1000);
 	}
 
-	//  TODO 芋艿：待测试
+	//  TODO mervyn：待测试
 	const shareInfo = computed(() => {
 		if (isEmpty(state.goodsInfo)) return {};
 		return sheep.$platform.share.getShareInfo({
@@ -253,7 +253,7 @@
           state.activityList.push(activity);
         } else if (activity.type === 5) { // 情况二：满减送
           state.activityInfo.push(activity);
-        } else { // 情况三：限时折扣 TODO 芋艿
+        } else { // 情况三：限时折扣 TODO mervyn
           console.log('待实现！优先级不高');
         }
       })

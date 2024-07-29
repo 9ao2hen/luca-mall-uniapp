@@ -57,7 +57,7 @@ const app = defineStore({
       // 加载装修配置
       await adaptTemplate(this.template, templateId)
 
-      // TODO 芋艿：未来支持管理后台可配；对应 https://api.shopro.sheepjs.com/shop/api/init
+      // TODO mervyn：未来支持管理后台可配；对应 https://api.shopro.sheepjs.com/shop/api/init
       if (true) {
         this.info = {
           name: '聚优购',
@@ -72,7 +72,7 @@ const app = defineStore({
         this.platform = {
           share: {
             methods: ["poster", "link"],
-            linkAddress: "http://127.0.0.1:3000", // TODO 芋艿：可以考虑改到 .env 那
+            linkAddress: "http://127.0.0.1:3000", // TODO mervyn：可以考虑改到 .env 那
             posterInfo: {
               "user_bg": "/static/img/shop/config/user-poster-bg.png",
               "goods_bg": "/static/img/shop/config/goods-poster-bg.png",

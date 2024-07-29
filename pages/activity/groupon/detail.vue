@@ -174,7 +174,7 @@
         </view>
       </view>
 
-      <!-- TODO 芋艿：这里暂时没接入 -->
+      <!-- TODO mervyn：这里暂时没接入 -->
       <view v-if="state.data.goods">
         <s-select-groupon-sku
           :show="state.showSelectSku"
@@ -214,7 +214,7 @@
     combinationHeadId: null, // 拼团团长编号
   });
 
-  // todo 芋艿：分享要再接下
+  // todo mervyn：分享要再接下
   const shareInfo = computed(() => {
     if (isEmpty(state.data)) return {};
     return sheep.$platform.share.getShareInfo(
@@ -244,19 +244,19 @@
     });
   }
 
-  // 去开团 TODO 芋艿：这里没接入
+  // 去开团 TODO mervyn：这里没接入
   function onCreateGroupon() {
     state.grouponAction = 'create';
     state.grouponId = 0;
     state.showSelectSku = true;
   }
 
-  // 规格变更 TODO 芋艿：这里没接入
+  // 规格变更 TODO mervyn：这里没接入
   function onSkuChange(e) {
     state.selectedSkuPrice = e;
   }
 
-  // 立即参团 TODO 芋艿：这里没接入
+  // 立即参团 TODO mervyn：这里没接入
   function onJoinGroupon() {
     state.grouponAction = 'join';
     state.grouponId = state.data.activityId;
@@ -265,7 +265,7 @@
     state.showSelectSku = true;
   }
 
-  // 立即购买 TODO 芋艿：这里没接入
+  // 立即购买 TODO mervyn：这里没接入
   function onBuy(sku) {
     sheep.$router.go('/pages/order/confirm', {
       data: JSON.stringify({
