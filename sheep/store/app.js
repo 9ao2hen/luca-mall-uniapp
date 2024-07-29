@@ -61,9 +61,9 @@ const app = defineStore({
       if (true) {
         this.info = {
           name: '聚优购',
-          logo: 'https://static.iocoder.cn/ruoyi-vue-pro-logo.png',
+          logo: 'https://mall.juyogo.cn/static/logo/luca-logo.png',
           version: '1.1.13',
-          copyright: '全部开源，个人与企业可 100% 免费使用',
+          copyright: '墨文科技有限责任公司',
           copytime: 'Copyright© 2018-2024',
 
           cdnurl: 'https://file.sheepjs.com', // 云存储域名
