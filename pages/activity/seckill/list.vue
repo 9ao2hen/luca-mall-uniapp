@@ -22,7 +22,7 @@
       <!-- 左侧图标 -->
       <view class="time-icon">
         <!-- TODO 芋艿：图片统一维护 -->
-        <image class="ss-w-100 ss-h-100" src="http://mall.yudao.iocoder.cn/static/images/priceTag.png" />
+        <image class="ss-w-100 ss-h-100" src="http://mall.juyogo.cn/static/images/priceTag.png" />
       </view>
       <scroll-view class="time-list" :scroll-into-view="activeTimeElId" scroll-x scroll-with-animation>
         <view v-for="(config, index) in timeConfigList" :key="index"
