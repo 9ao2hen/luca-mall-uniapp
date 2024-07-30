@@ -97,7 +97,7 @@ http.interceptors.request.use(
     }
 		// TODO mervyn：特殊处理
     config.header['Accept'] = '*/*'
-    config.header['tenant-id'] = '162';
+    config.header['tenant-id'] = '164';
     config.header['terminal'] = '20';
     // config.header['Authorization'] = 'Bearer test247';
 		return config;

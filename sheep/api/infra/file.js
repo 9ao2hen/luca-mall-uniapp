@@ -16,7 +16,7 @@ const FileApi = {
         header: {
           // Accept: 'text/json',
           Accept : '*/*',
-          'tenant-id' :'162',
+          'tenant-id' :'164',
           // Authorization:  'Bearer test247',
         },
         success: (uploadFileRes) => {
