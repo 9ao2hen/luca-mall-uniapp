@@ -24,7 +24,7 @@ async function login(code = '', state = '') {
     // 解密 code 发起登陆
     const loginResult = await AuthUtil.socialLogin(socialType, code, state);
     if (loginResult.code === 0) {
-      // TODO 芋艿：shareLog
+      // TODO mervyn：shareLog
       setOpenid(loginResult.data.openid);
       return loginResult;
     }

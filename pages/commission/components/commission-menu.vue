@@ -49,13 +49,13 @@
 			//   path: '/pages/commission/apply',
 			//   isAgentFrom: true,
 			// },
-			// todo @芋艿：邀请海报需要登录后的个人数据
+			// todo @mervyn：邀请海报需要登录后的个人数据
 			{
 				img: '/static/img/shop/commission/commission_icon7.png',
 				title: '邀请海报',
 				path: 'action:showShareModal',
 			},
-      // TODO @芋艿：缺少 icon
+      // TODO @mervyn：缺少 icon
       {
 				// img: '/static/img/shop/commission/commission_icon7.png',
 				title: '推广排行',

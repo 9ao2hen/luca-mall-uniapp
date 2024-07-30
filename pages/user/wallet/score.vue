@@ -31,7 +31,7 @@
 					</button>
 				</uni-datetime-picker>
 
-        <!-- TODO 芋艿：优化 -->
+        <!-- TODO mervyn：优化 -->
 <!--				<view class="total-box">-->
 <!--					<view class="ss-m-b-10">总收入￥{{ state.pagination.income }}</view>-->
 <!--					<view>总支出￥{{ -state.pagination.expense }}</view>-->

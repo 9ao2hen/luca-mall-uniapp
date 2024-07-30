@@ -141,7 +141,7 @@ export default class SheepPay {
     });
   }
 
-  // 浏览器微信 H5 支付 TODO 芋艿：待接入
+  // 浏览器微信 H5 支付 TODO mervyn：待接入
   async wechatWapPay() {
     const { error, data } = await this.prepay();
     if (error === 0) {
@@ -150,7 +150,7 @@ export default class SheepPay {
     }
   }
 
-  // 支付链接  TODO 芋艿：待接入
+  // 支付链接  TODO mervyn：待接入
   async redirectPay() {
     let { error, data } = await this.prepay();
     if (error === 0) {
@@ -202,7 +202,7 @@ export default class SheepPay {
     code === 0 && this.payResult('success');
   }
 
-  // 支付宝复制链接支付  TODO 芋艿：待接入
+  // 支付宝复制链接支付  TODO mervyn：待接入
   async copyPayLink() {
     let that = this;
     let { error, data } = await this.prepay();
@@ -221,7 +221,7 @@ export default class SheepPay {
     }
   }
 
-  // 支付宝支付  TODO 芋艿：待接入
+  // 支付宝支付  TODO mervyn：待接入
   async alipay() {
     let that = this;
     const { error, data } = await this.prepay();
@@ -243,7 +243,7 @@ export default class SheepPay {
     }
   }
 
-  // 微信支付  TODO 芋艿：待接入
+  // 微信支付  TODO mervyn：待接入
   async wechatAppPay() {
     let that = this;
     let { error, data } = await this.prepay();
@@ -327,7 +327,7 @@ export function getPayMethods(channels) {
     || (platform === 'App' && channels.includes('wx_app'))) {
     wechatMethod.disabled = false;
   }
-  wechatMethod.disabled = false; // TODO 芋艿：临时测试
+  wechatMethod.disabled = false; // TODO mervyn：临时测试
 
   // 2. 处理【支付宝支付】
   const alipayMethod = payMethods[1];
@@ -341,7 +341,7 @@ export function getPayMethods(channels) {
   if (channels.includes('wallet')) {
     walletMethod.disabled = false;
   }
-  // 4. 处理【苹果支付】TODO 芋艿：未来接入
+  // 4. 处理【苹果支付】TODO mervyn：未来接入
   // 5. 处理【模拟支付】
   const mockMethod = payMethods[4];
   if (channels.includes('mock')) {

@@ -1,6 +1,6 @@
 import request from '@/sheep/request';
 
-// TODO 芋艿：小程序直播还不支持
+// TODO mervyn：小程序直播还不支持
 export default {
   //小程序直播
   mplive: {

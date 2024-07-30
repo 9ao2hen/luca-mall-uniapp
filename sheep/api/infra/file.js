@@ -3,7 +3,7 @@ import { baseUrl, apiPath } from '@/sheep/config';
 const FileApi = {
   // 上传文件
   uploadFile: (file) => {
-    // TODO 芋艿：访问令牌的接入；
+    // TODO mervyn：访问令牌的接入；
     const token = uni.getStorageSync('token');
     uni.showLoading({
       title: '上传中',
@@ -16,7 +16,7 @@ const FileApi = {
         header: {
           // Accept: 'text/json',
           Accept : '*/*',
-          'tenant-id' :'162',
+          'tenant-id' :'164',
           // Authorization:  'Bearer test247',
         },
         success: (uploadFileRes) => {

@@ -167,7 +167,7 @@
         <text class="title">运费</text>
         <text class="detail">￥{{ fen2yuan(state.orderInfo.deliveryPrice) }}</text>
       </view>
-      <!-- TODO 芋艿：优惠劵抵扣、积分抵扣 -->
+      <!-- TODO mervyn：优惠劵抵扣、积分抵扣 -->
       <view class="notice-item ss-flex ss-row-between" v-if="state.orderInfo.couponPrice > 0">
         <text class="title">优惠劵金额</text>
         <text class="detail">-¥{{ fen2yuan(state.orderInfo.couponPrice) }}</text>
@@ -313,10 +313,10 @@
     });
   }
 
-  // 确认收货 TODO 芋艿：待测试
+  // 确认收货 TODO mervyn：待测试
   async function onConfirm(orderId, ignore = false) {
     // 需开启确认收货组件
-    // todo: 芋艿：待接入微信
+    // todo: mervyn：待接入微信
     // 1.怎么检测是否开启了发货组件功能？如果没有开启的话就不能在这里return出去
     // 2.如果开启了走mpConfirm方法,需要在App.vue的show方法中拿到确认收货结果
     let isOpenBusinessView = true;
@@ -379,7 +379,7 @@
     // 对详情数据进行适配
     let res;
     if (state.comeinType === 'wechat') {
-      // TODO 芋艿：微信场景下
+      // TODO mervyn：微信场景下
       res = await OrderApi.getOrder(id, {
         merchant_trade_no: state.merchantTradeNo,
       });
@@ -399,7 +399,7 @@
     if (options.id) {
       id = options.id;
     }
-    // TODO 芋艿：下面两个变量，后续接入
+    // TODO mervyn：下面两个变量，后续接入
     state.comeinType = options.comein_type;
     if (state.comeinType === 'wechat') {
       state.merchantTradeNo = options.merchant_trade_no;

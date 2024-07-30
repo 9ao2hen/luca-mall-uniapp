@@ -86,7 +86,7 @@
   /**
    * 秒杀活动SKU选择，
    * 与s-select-sku的区别：多一个秒杀价的标签、没有加入购物车按钮、立即购买按钮叫确认、秒杀有最大购买数量限制
-   * 差别不大，可以考虑合并 todo @芋艿
+   * 差别不大，可以考虑合并 todo @mervyn
    */
   // 按钮状态： active,nostock
   import { computed, reactive, watch } from 'vue';

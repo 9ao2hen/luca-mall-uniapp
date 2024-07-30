@@ -31,7 +31,7 @@
             </template>
           </s-coupon-list>
         </view>
-        <!-- TODO 芋艿：未来接口需要支持下
+        <!-- TODO mervyn：未来接口需要支持下
         <view class="subtitle ss-m-t-40 ss-m-l-20">不可使用优惠券</view>
         <view v-for="item in state.couponInfo.cannot_use" :key="item.id">
           <s-coupon-list :data="item" type="user" :disabled="true">

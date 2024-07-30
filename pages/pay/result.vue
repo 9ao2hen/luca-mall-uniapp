@@ -39,7 +39,7 @@
         <button class="check-btn ss-reset-button" v-if="payResult === 'success'" @tap="onOrder">
           查看订单
         </button>
-        <!-- TODO 芋艿：拼团接入 -->
+        <!-- TODO mervyn：拼团接入 -->
         <button
           class="check-btn ss-reset-button"
           v-if="payResult === 'success' && state.tradeOrder.type === 3"
@@ -49,7 +49,7 @@
         </button>
       </view>
 
-      <!-- TODO 芋艿：订阅 -->
+      <!-- TODO mervyn：订阅 -->
       <!-- #ifdef MP -->
       <view class="subscribe-box ss-flex ss-m-t-44">
         <image class="subscribe-img" :src="sheep.$url.static('/static/img/shop/order/cargo.png')" />
@@ -136,7 +136,7 @@
   }
 
   function onOrder() {
-    // TODO 芋艿：待测试
+    // TODO mervyn：待测试
     if (state.orderType === 'recharge') {
       sheep.$router.redirect('/pages/pay/recharge-log');
     } else {
@@ -144,7 +144,7 @@
     }
   }
 
-  // TODO 芋艿：待测试
+  // TODO mervyn：待测试
   // #ifdef MP
   function subscribeMessage() {
     let event = ['order_dispatched'];

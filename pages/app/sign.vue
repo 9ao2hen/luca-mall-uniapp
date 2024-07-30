@@ -159,7 +159,7 @@
     getSignInfo();
     getSignConfigList();
   });
-  // TODO 芋艿：1）css 需要优化，例如说引入的图片；2）删除多余的样式
+  // TODO mervyn：1）css 需要优化，例如说引入的图片；2）删除多余的样式
 </script>
 
 <style lang="scss" scoped>

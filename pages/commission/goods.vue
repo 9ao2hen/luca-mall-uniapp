@@ -70,7 +70,7 @@
     shareInfo: {},
   });
 
-  // TODO 芋艿：分享的接入
+  // TODO mervyn：分享的接入
   function onShareGoods(goodsInfo) {
     state.shareInfo = $share.getShareInfo(
       {
